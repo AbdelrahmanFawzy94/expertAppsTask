@@ -1,0 +1,15 @@
+<h2 class="tt-capitalize">add user</h2>
+<form>
+  <mat-form-field class="w-100">
+    <mat-label>Email</mat-label>
+    <input [(ngModel)]="email" name="email" type="email" matInput required placeholder="Ex. jhonDoe@example.com">
+  </mat-form-field>
+  <mat-form-field class="w-100">
+    <mat-label>name</mat-label>
+    <input [(ngModel)]="name" name="name" type="text" matInput required placeholder="Ex. jhon Doe">
+  </mat-form-field>
+</form>
+<mat-dialog-actions>
+  <button mat-stroked-button color="warn" (click)="close()">close</button>
+  <button mat-raised-button color="primary" (click)="create()">create</button>
+</mat-dialog-actions>

@@ -1,0 +1,70 @@
+@import '../../../../../styles.scss';
+
+.users {
+  margin-bottom: 40px;
+
+  .buttons {
+    margin-bottom: 20px;
+
+    button {
+      border: 0;
+      color: #fff;
+      background-image: linear-gradient(
+        45deg,
+        darken($primary-color, 15%),
+        lighten($primary-color, 15%)
+      );
+      text-transform: capitalize;
+      font-size: 14px;
+      padding: 10px 22px;
+      border-radius: 21px;
+      outline: none;
+      cursor: pointer;
+      font-weight: 700;
+      box-shadow: 0px 3px 8px rgba(lighten($primary-color, 8%), 0.5);
+      transition: 0.3s;
+
+      &:hover {
+        box-shadow: 0px 4px 12px rgba(lighten($primary-color, 8%), 0.6);
+      }
+    }
+  }
+
+  .table-container {
+    zoom: 1;
+
+    .actions {
+      zoom: unset;
+
+      button {
+        i {
+          color: $primary-color;
+
+          &.flaticon-delete {
+            color: $danger;
+          }
+
+          &::before {
+            margin: 0;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+mat-row,
+mat-header-row {
+  border-width: unset;
+  border-bottom-width: unset;
+  border-style: unset;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: -1px 2px 6px 0px rgba(darken($primary-color, 10%), 0.2);
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: -1px 2px 10px 0px rgba(darken($primary-color, 10%), 0.3);
+  }
+}

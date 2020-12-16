@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background-image: url(assets/images/logo-in-bg@2x.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
+// colors
+
+$primary-color: #0071bc;
+$secondry-color: #7cc946;
+$white: #fff;
+$black: #000;
+$info: #00bcd4 !default;
+$warning: #ff9800 !default;
+$danger: #f44336 !default;
+$success: #00d329 !default;
+// general classes
+
+.container {
+  padding: 0 200px;
+
+  @media (max-width: 1300px) {
+    padding: 0 150px;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 0 80px;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 0 15px;
+  }
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.min-100vh {
+  min-height: 100vh;
+}
+
+.pt-140px {
+  padding-top: 140px;
+}
+
+.mb-30px {
+  margin-bottom: 30px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.tt-capitalize {
+  text-transform: capitalize;
+}
